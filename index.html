@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Kumar | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:radial-gradient(circle at top,#0f172a,#020617);color:#e2e8f0}
+
+/* HEADER */
+header{position:sticky;top:0;background:rgba(15,23,42,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,255,255,.2)}
+nav{width:90%;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+nav h2{color:#38bdf8}
+nav ul{display:flex;list-style:none}
+nav ul li{margin:8px}
+nav a{color:#e2e8f0;text-decoration:none;padding:6px 12px;border-radius:8px;transition:.3s}
+nav a:hover{background:#38bdf8;color:#020617}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url('Firefly_Gemini Flash_Add the developer in the second image 876404.png') center/cover;
+}
+
+   .hero-tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+.profile-pic{
+width:160px;height:160px;border-radius:50%;
+border:3px solid #38bdf8;box-shadow:0 0 25px #38bdf8;
+margin-bottom:18px;transition:.4s;
+}
+.profile-pic:hover{transform:scale(1.1);box-shadow:0 0 45px #38bdf8}
+
+.hero h1{font-size:2.5rem}
+
+/* BUTTON */
+.btn{
+display:inline-block;margin:10px;padding:10px 18px;border-radius:10px;
+border:1px solid #38bdf8;color:#38bdf8;text-decoration:none;
+transition:.3s;background:rgba(56,189,248,.1)
+}
+.btn:hover{background:#38bdf8;color:#020617;transform:translateY(-4px);box-shadow:0 0 15px #38bdf8}
+
+/* SECTION */
+.section{width:90%;margin:50px auto}
+.glass{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(56,189,248,.2);
+backdrop-filter:blur(10px);
+border-radius:16px;padding:26px;
+transition:.4s;
+}
+.glass:hover{transform:translateY(-10px);box-shadow:0 0 40px rgba(56,189,248,.7)}
+
+h2 i{color:#38bdf8;margin-right:8px}
+
+/* CURSOR */
+#typing::after,#aboutTyping::after{
+content:"|";
+animation:blink .7s infinite;
+margin-left:5px;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* LINKS */
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{
+padding:10px 14px;border-radius:20px;
+border:1px solid rgba(56,189,248,.3);
+background:rgba(56,189,248,.1);
+color:#38bdf8;text-decoration:none;
+}
+.links a:hover{background:#38bdf8;color:#020617}
+
+/* PROJECT */
+.projects{display:flex;flex-wrap:wrap;gap:20px}
+.card{
+flex:1 1 260px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(56,189,248,.2);
+border-radius:16px;padding:20px;
+transition:.4s;
+}
+.card:hover{transform:scale(1.07);box-shadow:0 0 30px rgba(56,189,248,.8)}
+
+.list li{margin:8px 0}
+
+/* FOOTER */
+footer{text-align:center;padding:18px;background:rgba(15,23,42,.8)}
+
+/* FLOAT BUTTONS */
+.whatsapp,.call,.email{
+position:fixed;right:20px;border-radius:50%;padding:16px;color:#fff;box-shadow:0 0 15px;transition:.3s;
+}
+.whatsapp{bottom:20px;background:#22c55e}
+.call{bottom:90px;background:#3b82f6}
+.email{bottom:160px;background:#f43f5e}
+.whatsapp:hover,.call:hover,.email:hover{transform:scale(1.2)}
+</style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+<header>
+<nav>
+<h2><i class="fa-solid fa-code"></i> Pawan Kumar</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#Education">Education</a></li>
+<li><a href="#links">Profiles</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#cert">Certifications</a></li>
+<li><a href="#activity">Activities</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero aos-init aos-animate" data-aos="fade-up">
+<img src="profile.jpeg" class="profile-pic">
+<h1>Hello, I'm Pawan Kumar</h1>
+<p><i class="fa-solid fa-chalkboard-user"></i> <span id="typing">Department of Computer Applications</span></p>
+
+
+<a href="#experience" class="btn"><i class="fa-solid fa-briefcase"></i> View My Experience</a>
+<a href="tel:+916387244110" class="btn"><i class="fa-solid fa-phone"></i> Call Me</a>
+<a href="https://wa.me/916387244110" class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section aos-init" data-aos="fade-right">
+<div class="glass">
+<h2><i class="fa-solid fa-user"></i> About Me</h2>
+<p id="aboutTyping">I'm Pawan Kumar, A collaborative team player with a passion for continuous learning and a proactive approach to mastering new technologies. I am confident in my ability to quickly adapt and contribute effectively to a dynamic development team while building innovative solutions. </p>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="Education" class="section aos-init" data-aos="fade-up">
+<div class="glass">
+<h2><i class="fa-solid fa-school"></i> Education</h2>
+<ul class="list">
+<li>Matriculation  - St.John Intermediate College H/S (2023) - 80%</li>
+<li>Intermediate   - St.John Intermediate College (2025) - 78.4%</li>
+<li>BCA            - MAHARANA PRATAP COLLEGE OF PROFFESIONAL STUDIES, KANPUR NAGAR (2028) - 8.5 CGPA</li>
+<li>Master Diploma - Speed Tech Computer Training Center (2025) - 74%</li>
+</ul>
+</div>
+</section>
+
+<!-- PROFILES -->
+<section id="links" class="section aos-init" data-aos="zoom-in">
+<div class="glass">
+<h2><i class="fa-solid fa-link"></i> Profiles</h2>
+
+<div class="links">
+<a href="https://www.hackerrank.com/profile/Pn4032290" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-hackerrank"></i>🏆 HackerRank
+</a>
+
+<a href="https://leetcode.com/u/PAWAN_KUMAR_41/" target="_blank" rel="noopener noreferrer">
+<i class="fa-solid fa-code"></i>⚙️ LeetCode
+</a>
+
+<a href="https://github.com/TechyPawan" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-github"></i>🐙 GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/pawan-kumar-14b0a2314/" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-linkedin"></i>💼 LinkedIn
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECT -->
+<!-- PROJECT -->
+<section id="projects" class="section aos-init" data-aos="fade-up">
+<div class="glass">
+<h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+
+<div class="projects">
+
+<!-- PROJECT 1 -->
+<div class="card">
+<h3><i class="fa-solid fa-video"></i> Wastage System</h3>
+
+<p style="margin-top:10px; line-height:1.6">
+The <b>SmartCity</b> Flow system is a comprehensive digital ecosystem designed to transform waste management from a reactive chore into a proactive, data-driven operation. By focusing on the needs of the frontline workers, this project aims to reduce physical strain, optimize daily routes, and ensure a cleaner environment with less effort.
+
+</p>
+
+<ul class="list">
+<li> Real Time Bin Analytics<b>ON</b> when a living object is detected</li>
+<li>Dynamic Route Optimization</li>
+<li>Instant Hazaard Reporting</li>
+<li>Sigital Duty Log System</li>
+</ul>
+<p>​Would you like me to help you draft a specific technical stack.</p>
+
+</div>
+
+<!-- PROJECT 2 -->
+<div class="card">
+<h3><i class="fa-solid fa-globe"></i> Wisdom Web</h3>
+
+<p style="margin-top:10px; line-height:1.6">
+A complete <b>E-learning platform</b> designed for colleges.
+</p>
+
+<ul class="list">
+<li>Teachers can take <b>online classes</b></li>
+<li>Upload <b>study materials / modules</b></li>
+<li>Manage <b>students &amp; academic tasks</b></li>
+<li>Supports multiple educational activities</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section aos-init" data-aos="fade-left">
+<div class="glass">
+<h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+<ul class="list">
+    <h3>👋 ROLES</h3>
+<li><b>Full Stack Developer : </b>Saiket Systems, Kanpur (Aug 2025 - Oct 2025)</li>
+<li><b>Public Relation Head : </b>Maharana Pratap College of Proffesional Studies, Kanpur (Oct 2025 -Present)</li>
+<li><b>Intern : </b>International Model United Nations (March 2026-April 2026)</li>
+</ul>
+</div>
+</section>
+
+
+
+
+
+<!-- CERTIFICATIONS -->
+<section id="cert" class="section aos-init" data-aos="zoom-in-up">
+<div class="glass">
+<h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+
+<div class="projects">
+
+<!-- BASIC -->
+<div class="card">
+<h3 style="color:#38bdf8;"><i class="fa-solid fa-layer-group"></i> Basic Level</h3>
+
+<ul class="list">
+<li>🟢 Basic Level - Leadership Development by Human Charger</li>
+</ul>
+
+<a href="super77.in.png" target="_blank" class="btn">
+<i class="fa-solid fa-file-pdf"></i> View Certificate
+</a>
+</div>
+
+<!-- INTERMEDIATE -->
+<div class="card">
+<h3 style="color:#38bdf8;"><i class="fa-solid fa-layer-group"></i> Intermediate Level</h3>
+
+<ul class="list">
+<li>🔵 Intermediate Level - Intro to Python by Google Kaggle</li>
+</ul>
+
+<a href="Pawan kumar - Intro to Programming.png" target="_blank" class="btn">
+<i class="fa-solid fa-file-pdf"></i> View Certificate
+</a>
+</div>
+
+<!-- ADVANCED -->
+<div class="card">
+<h3 style="color:#38bdf8;"><i class="fa-solid fa-layer-group"></i> Advanced Level</h3>
+
+<ul class="list">
+<li>🔴 Advanced Level - Cybersecurity by IBM</li>
+</ul>
+
+<a href="Screenshot_20251130_144233_One Read.jpg" target="_blank" class="btn">
+<i class="fa-solid fa-file-pdf"></i> View Certificate
+</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ACTIVITY -->
+<section id="activity" class="section aos-init" data-aos="zoom-in-up">
+<div class="glass">
+<h2><i class="fa-solid fa-star"></i> Activities</h2>
+<ul class="list">
+<li>💻 Coding Competitions</li>
+<li>🎓 Hackathon Participant</li>
+<li>🏅 Active Sports Participant</li>
+<li>📋 Event Coordinator</li>
+</ul>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section aos-init" data-aos="fade-up">
+<div class="glass">
+<h2><i class="fa-solid fa-address-card"></i> Contact</h2>
+<p><i class="fa-solid fa-envelope"></i> Pn4032290@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i> 6387244110</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Pawan Kumar  · Made with ❤️ · All rights reserved.</p>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<a href="mailto:Pn4032290@gmail.com" class="email"><i class="fa-solid fa-envelope"></i></a>
+<a href="tel:+916387244110" class="call"><i class="fa-solid fa-phone"></i></a>
+<a href="https://wa.me/916387244110" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration:1000, once:true });
+
+/* HERO typing */
+const texts=["BCA Student","Department of Computer Application","Competitive coding | C/C++ Expertise | Python Developer","Full Stack Developer"];
+let i=0,j=0,cur="",del=false;
+function type(){
+cur=texts[i];
+if(!del){
+document.getElementById("typing").textContent=cur.substring(0,j++);
+if(j>cur.length){del=true;setTimeout(type,1200);return;}
+}else{
+document.getElementById("typing").textContent=cur.substring(0,j--);
+if(j==0){del=false;i=(i+1)%texts.length;}
+}
+setTimeout(type,del?50:80);
+}
+type();
+
+
+</script>
+
+    
+</body>
+</html>
